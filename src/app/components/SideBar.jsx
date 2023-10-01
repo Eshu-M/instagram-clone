@@ -4,7 +4,6 @@ import {GoHomeFill} from 'react-icons/go'
 import {BsSearch} from 'react-icons/bs'
 import {AiOutlineHeart ,AiOutlineMenu} from 'react-icons/ai'
 import {SiAddthis} from 'react-icons/si'
-import {CgProfile} from 'react-icons/cg'
 import {ImCompass2} from 'react-icons/im'
 import {TfiVideoClapper} from 'react-icons/tfi'
 import {LuSend} from 'react-icons/lu'
@@ -46,7 +45,7 @@ export default function SideBar() {
          <h1 className='optionNames'>Create</h1>
       </div>
       <div onClick={()=>isSelected('Option8')} className={selectedOption === 'Option8' ? 'sideMenuItemsSelected sideMenu' : 'sideMenu'}>
-         <CgProfile className='icons'/>
+         <img src='https://cdn-icons-png.flaticon.com/512/3106/3106773.png' alt='' className='h-8 rounded-full border p-1 mt-1 mb-1'/>
          <h1 className='optionNames'>Profile</h1>
       </div>
     </div>

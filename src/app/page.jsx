@@ -1,20 +1,30 @@
-import Image from 'next/image'
 import SideBar from './components/SideBar'
 import Header from './components/Header'
+import Feed from './components/Feed'
 
 export default function Home() {
   return (
-    <div className='flex flex-row'>
-      <div className='md:hidden p-5 border-b w-full'>
+    <main className='flex flex-row min-h-screen'>
+      {/*Header , stories and the feed in the small screen*/}
+    <section className='md:hidden border-b w-full sticky top-0'>
+      <header className='p-5 border-b'>
         <Header/>
-      </div>
-    <section className='bg-white h-[100vh] max-h-[100vh] w-fit xl:w-[16%] p-5 border-r-2 border-gray-100 pt-10 pl-6  left-0 sticky md:inline-block hidden'>
+      </header>
+      <section className='md:hidden'>
+            <Feed/>
+      </section>
+    </section>
+    {/*Side Bar*/}
+    <section className='z-30 bg-white h-[100vh] max-h-[100vh] w-fit xl:w-[16%] p-5 border-r-2 border-gray-100 pt-10 pl-6 sticky left-0 top-0 md:inline-block hidden'>
        <Header/>
        <SideBar/>
     </section>
-    <section>
-
-    </section>
-    </div>
+    {/*stories and  feed section*/}
+    <section className='hidden md:inline-flex'>
+          <section>
+            <Feed/>
+          </section>
+      </section>
+    </main>
   )
 }
