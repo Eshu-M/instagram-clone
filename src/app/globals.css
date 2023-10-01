@@ -2,26 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components{
+  .icons{
+    @apply h-10 w-7
   }
-}
+  .sideMenu{
+    @apply font-normal flex space-x-3 pl-1 items-center max-h-fit hover:border hover:rounded-lg hover:bg-gray-100 hover:cursor-pointer mb-3
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .sideMenuIcons{
+    @apply hover:scale-125 transform transition-transform duration-200 ease-out cursor-pointer
+  }
+  .sideMenuItems{
+    @apply checked:border rounded-lg bg-slate-100
+  }
+
 }
