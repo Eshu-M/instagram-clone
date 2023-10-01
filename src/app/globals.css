@@ -3,18 +3,30 @@
 @tailwind utilities;
 
 @layer components{
+  .firstLogo{
+    @apply h-8 w-24 md:hidden xl:inline-flex object-contain
+  }
+  .secondLogo{
+    @apply object-contain h-7 w-7 m-2 text-center hidden sm:hidden md:inline-flex xl:hidden
+  }
   .icons{
-    @apply h-10 w-7
+    @apply text-4xl p-1
   }
   .sideMenu{
-    @apply font-normal flex space-x-3 pl-1 items-center max-h-fit hover:border hover:rounded-lg hover:bg-gray-100 hover:cursor-pointer mb-3
+    @apply font-normal flex space-x-3 pl-1 items-center max-h-fit hover:border hover:rounded-lg hover:bg-gray-100 hover:cursor-pointer mb-3 w-[100%]
   }
 
   .sideMenuIcons{
     @apply hover:scale-125 transform transition-transform duration-200 ease-out cursor-pointer
   }
-  .sideMenuItems{
-    @apply checked:border rounded-lg bg-slate-100
+  .sideMenuItemsSelected{
+    @apply border rounded-lg bg-slate-100
   }
-
+  .optionNames{
+    @apply hidden xl:inline-flex max-w-fit flex-1
+  }
+  .menuOption{
+    @apply hidden sm:max-w-fit xl:min-w-fit xl:max-w-2xl
+  }
+  
 }
