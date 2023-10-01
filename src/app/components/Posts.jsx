@@ -19,7 +19,7 @@ export default function Posts() {
         }
     ]
   return (
-    <div>
+    <div className='sm:max-w-lg m-6 items-center'>
         {allPosts.map((post)=>(
             <Post
             key={post.id}

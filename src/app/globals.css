@@ -28,5 +28,7 @@
   .menuOption{
     @apply hidden sm:max-w-fit xl:min-w-fit xl:max-w-2xl
   }
-  
+  .postButtons{
+    @apply text-2xl hover:cursor-pointer hover:text-gray-500
+  }
 }

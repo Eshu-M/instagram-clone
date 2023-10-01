@@ -5,13 +5,13 @@ import Posts from './Posts'
 export default function Feed() {
   return (
     <>
-     <section>
+     <section className='flex flex-col items-center'>
         {/* Stories */}
 
         <Stories/>
 
         {/*Posts*/}
-
+        
         <Posts/>
      </section>
 
