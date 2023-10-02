@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Feed from './components/Feed'
 import Footer from './components/Footer'
 import MiniProfile from './components/MiniProfile'
+import Suggestions from './components/Suggestions'
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       </section>
     </section>
     {/*Side Bar*/}
-    <section className='bg-white h-[100vh] max-h-[100vh] max-w-[16%] p-5 border-r-2 border-gray-100 pt-10 pl-6 sticky left-0 top-0 md:inline-block hidden'>
+    <section className='bg-white h-[100vh] max-h-[100vh] min-w-[16%] p-5 border-r-2 border-gray-100 pt-10 pl-6 sticky left-0 top-0 md:inline-block hidden'>
        <Header/>
        <SideBar/>
     </section>
@@ -26,10 +27,11 @@ export default function Home() {
           <section className='flex-1'>
             <Feed/>
           </section>
-          <section className='min-w-[35%]'>
+          <section className='min-w-[35%] pl-10 pr-10'>
            {/*Mini Profile */}
              <MiniProfile/>
            {/* Suggestions */}
+             <Suggestions/>
           </section>
       </section>
 
