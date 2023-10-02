@@ -49,7 +49,7 @@ export default function SideBar() {
          <h1 className='optionNames'>Profile</h1>
       </div>
     </div>
-      <div className='mt-10 absolute bottom-0 mb-5 flex flex-col menuOption'>
+    <div className='md:mt-10 md:absolute md:bottom-0 md:mb-5 md:flex md:flex-col md:menuOption hidden'>
 
       <div onClick={()=>isSelected('Option9')} className={selectedOption === 'Option9' ? 'sideMenuItemsSelected sideMenu' : 'sideMenu'}>
          <HiAtSymbol className='icons'/>
@@ -59,7 +59,7 @@ export default function SideBar() {
          <AiOutlineMenu className='icons'/>
          <h1 className='optionNames'>More</h1>
       </div>
-      </div>
+   </div>
     </>
   )
 }
